@@ -2,11 +2,11 @@
 
 ## Spis treści
 
-1. [Instrukcja obsługi](#ins)
-2. [Opis algorytmu](#alg)
-3. [Opis klas i plików](#cls)
+1. [Instrukcja obsługi](#1-instrukcja-obsługi)
+2. [Opis algorytmu](#2-opis-algorytmu)
+3. [Opis klas i plików](#3-opis-klas-i-plików)
 
-## 1. Instrukcja Obsługi {#ins}
+## 1. Instrukcja Obsługi
 
 1. Do skompilowania i uruchomienia projektu wymagana jest Java w wersji 11
 2. Projekt nie używa żadnych zewnętrznych paczek, ani bibliotek
@@ -29,11 +29,11 @@ javac Main.java
 java Main
 ``` 
 
-## 2. Opis algorytmu {#alg}
+## 2. Opis algorytmu
 
 Program działa na zasadzie [Ataku Brute Force](https://pl.wikipedia.org/wiki/Atak_brute_force), buduje wszystkie możliwe ścieżki od startu labiryntu do ślepych zaułków oraz do mety. Algorytm w pętli buduję kolejne kroki ścieżek analizując możliwe ruchy i wykluczając je ze względu na ściany bądź zapętlenia. Pętla analizująca kolejne niezakończone ścieżki będzie działa póki każda z możliwych dróg nie zostanie zakończona ze względu na wystąpione zapętlenie, brak możliwości ruchu bądź znaleziony koniec labiryntu. Następnie po wywołaniu odpowiedniej metody program zwróci najkrótszą z możliwych ścieżek w postaci kodu literowego oznaczającego kolejne kroki od staru do mety labiryntu(kroki oznaczone są pierwszymi literami wykonanego ruchu, np.: krok w prawo - P, krok w górę - G, koniec labiryntu - K).
 
-## 3. Opis klas i plików {#cls}
+## 3. Opis klas i plików
 
 1. Main.java
 
